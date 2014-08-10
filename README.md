@@ -64,8 +64,7 @@ Because Meteor uses __WebSockets__ instead of HTTP Calls to communicate with its
 
 ## Installation
 
-After installing the "tiws" module. Simply check out this repo or use Github's "Download Zip" button. Then extract the zip in the correct folder of your Project depending on the type of your Titanium app. The "ti.meteor" folder must be in this directories.
-
+After installing the "tiws" module. Simply check out this repo or use Github's "Download Zip" button. Then extract the zip in the correct folder of your Project depending on the type of your Titanium app. The "ti.meteor" folder must be one of these directories, depending on the type of Titanium app. 
 
 ###Alloy
 
@@ -148,6 +147,14 @@ if (Meteor.isServer) {
 		}
     
     });
+
+    Meteor.methods({
+		hello: function(name) {
+			if (name) {
+				return "hello "+name;
+			}
+		}
+    });
 }
 ```
 #### Titanium
@@ -161,7 +168,8 @@ Declare the "Projects" Collection in index.js or if you like to use it globally 
 ```javascript
 Projects = new Meteor.Collection("projects");
 ```
-Subscribe to that Collection in a reactive way and make a database call every time the return value of our Meteor.subscribe() or our Mongo Query changes function changes. 
+Subscribe to that collection in a reactive way and make a database call every time our Meteor.subscribe() call or our mongo query changes the callback function will be executed again. 
+
 You can simply update your UI elements that way.
 
 ```javascript
@@ -175,6 +183,14 @@ A typical pattern would be to stop the dependency observing and subscriptions wh
 ```javascript
 $.myWindow.addEventListener('close', function() {
 	dep.stop(;
+});
+```
+
+Call our Meteor method "hello"
+
+```javascript
+Meteor.call("hello", "world", function(error, data) {
+	Ti.API.info("data: "+data);
 });
 ```
 
@@ -209,7 +225,7 @@ The only thing which is missing right now ist the Login with external Service Fe
 
 TiMeteor can be easily extended through plugins. Plugins are simple commonjs modules, which depend on the Meteor API. 
 
-Plugins don't have to be defined globally like the basic TiMeteor framework, but it is convenient to also assign them to the TiMeteor.
+Plugins don't have to be defined globally like the basic TiMeteor framework, but it is convenient to also assign them to the global "TiMeteor" namespace.
 
 
 ### WebView
@@ -252,7 +268,7 @@ The Push plugin will consist of Meteor package for the server and a TiMeteor cli
 
 Goals of this plugin:
 
-* normalize the Push API on client and server to be crossplatform for iOS and Android
+* normalize the Push API on client and server for iOS and Android
 * Automatic deviceToken managment in the user accounts system
 * manage server connection state depending app pause & resume
 * Manage Push Notification Delivery
