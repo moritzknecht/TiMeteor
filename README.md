@@ -26,7 +26,6 @@ This allows you use javascript to build a website frontend, website backend and 
 	- [Documentation](#user-content-documentation)
 		- [TiMeteor API](#user-content-timeteor-api)
 			- [Methods](#user-content-methods)
-				- [TiMeteor.init(options):null](#user-content-timeteorinitoptionsnull)
 		- [Meteor API](#user-content-meteor-api)
 	- [Plugins](#user-content-plugins)
 		- [WebView](#user-content-webview)
@@ -185,7 +184,7 @@ $.myWindow.addEventListener('close', function() {
 
 #### Methods
 
-##### TiMeteor.init(options):null
+__TiMeteor.init(options):null__
 
 init() must be called after the full Meteor is already initialized as global variables
 
