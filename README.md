@@ -9,6 +9,33 @@ __TiMeteor__ exposes the full Meteor API to your Titanium app.
 
 This allows you use javascript to build a website frontend, website backend and native apps for iOS and Android. Your Data will be automatically in sync and you can use the same API and Mongo queries, in the browser, on the server and in your app. 
 
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [TiMeteor (Beta)](#user-content-timeteor-beta)
+	- [Features](#user-content-features)
+	- [Module Dependencies](#user-content-module-dependencies)
+	- [Installation](#user-content-installation)
+		- [Alloy](#user-content-alloy)
+		- [Classic](#user-content-classic)
+	- [Usage](#user-content-usage)
+		- [Initialization Code](#user-content-initialization-code)
+		- [Basic Example](#user-content-basic-example)
+			- [Server](#user-content-server)
+			- [Titanium](#user-content-titanium)
+				- [Simple Pattern](#user-content-simple-pattern)
+	- [Documentation](#user-content-documentation)
+		- [TiMeteor API](#user-content-timeteor-api)
+			- [Methods](#user-content-methods)
+				- [TiMeteor.init(options):null](#user-content-timeteorinitoptionsnull)
+		- [Meteor API](#user-content-meteor-api)
+	- [Plugins](#user-content-plugins)
+		- [WebView](#user-content-webview)
+			- [Methods](#user-content-methods-1)
+				- [TiMeteor.WebView.importToken(Ti.UI.WebView) : null](#user-content-timeteorwebviewimporttokentiuiwebview--null)
+				- [TiMeteor.WebView.exportToken(Ti.UI.WebView) : Object](#user-content-timeteorwebviewexporttokentiuiwebview--object)
+				- [TiMeteor.WebView.removeToken(Ti.UI.WebView) : null](#user-content-timeteorwebviewremovetokentiuiwebview--null)
+		- [Push (coming soon)](#user-content-push-coming-soon)
+
 
 ## Features
 
