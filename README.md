@@ -7,7 +7,7 @@ __Use the Power of Meteor in your Titanium App.__
 
 __TiMeteor__ exposes the full Meteor API to your Titanium app. 
 
-This allows you use javascript to build a website frontend, website backend and native apps for iOS and Android. Your Data will be automatically in sync and you can use the same API and Mongo queries, in the browser, on the server and in your app. 
+This allows you use the Meteor javascript API to build a website frontend, website backend and native apps for iOS and Android. Your Data will be automatically in sync and you can use the same API and Mongo queries, in the browser, on the server and in your app. 
 
 This is not considered to be used for production releases, please feel free to raise issues to get this library stable. 
 
