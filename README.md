@@ -9,9 +9,8 @@ __TiMeteor__ exposes the full Meteor API to your Titanium app.
 
 This allows you use javascript to build a website frontend, website backend and native apps for iOS and Android. Your Data will be automatically in sync and you can use the same API and Mongo queries, in the browser, on the server and in your app. 
 
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+**Table of Contents** 
 
-- [TiMeteor (Beta)](#user-content-timeteor-beta)
 	- [Features](#user-content-features)
 	- [Module Dependencies](#user-content-module-dependencies)
 	- [Installation](#user-content-installation)
@@ -31,9 +30,6 @@ This allows you use javascript to build a website frontend, website backend and 
 	- [Plugins](#user-content-plugins)
 		- [WebView](#user-content-webview)
 			- [Methods](#user-content-methods-1)
-				- [TiMeteor.WebView.importToken(Ti.UI.WebView) : null](#user-content-timeteorwebviewimporttokentiuiwebview--null)
-				- [TiMeteor.WebView.exportToken(Ti.UI.WebView) : Object](#user-content-timeteorwebviewexporttokentiuiwebview--object)
-				- [TiMeteor.WebView.removeToken(Ti.UI.WebView) : null](#user-content-timeteorwebviewremovetokentiuiwebview--null)
 		- [Push (coming soon)](#user-content-push-coming-soon)
 
 
@@ -225,7 +221,7 @@ TiMeteor.WebView = require('ti.meteor/plugins/webview');
 
 #### Methods
 
-##### TiMeteor.WebView.importToken(Ti.UI.WebView) : null
+__TiMeteor.WebView.importToken(Ti.UI.WebView) : null__
 
 importToken() imports the Token from a logged in User to the localstorage of a webview and reloas the page, to make sure the user is logged in.
 
@@ -240,11 +236,11 @@ $.webView.addEventListener("load", function() {
 	}
 });
 ```
-##### TiMeteor.WebView.exportToken(Ti.UI.WebView) : Object
+__TiMeteor.WebView.exportToken(Ti.UI.WebView) : Object__
 
 exportToken() exports the Meteor Token from the Localstorage of a WebView returns a dictionary with the userId, token and token expire date
 
-##### TiMeteor.WebView.removeToken(Ti.UI.WebView) : null
+__TiMeteor.WebView.removeToken(Ti.UI.WebView) : null__
 
 removeToken() removes the Meteor Tokens from a WebView, so the user will be logged out
 
