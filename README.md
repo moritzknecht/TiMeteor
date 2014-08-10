@@ -22,7 +22,6 @@ This allows you use javascript to build a website frontend, website backend and 
 		- [Basic Example](#user-content-basic-example)
 			- [Server](#user-content-server)
 			- [Titanium](#user-content-titanium)
-				- [Simple Pattern](#user-content-simple-pattern)
 	- [Documentation](#user-content-documentation)
 		- [TiMeteor API](#user-content-timeteor-api)
 			- [Methods](#user-content-methods)
@@ -153,8 +152,6 @@ Create a Alloy or Clasic Project
 Copy the __Initilization Code__ to the top of YourProjectName/app/alloy.js or YourProjectName/Resources/app.js 
 
 Declare the "Projects" Collection in index.js or if you like to use it globally in alloy.js/app.js
-
-##### Simple Pattern
 
 ```javascript
 Projects = new Meteor.Collection("projects");
