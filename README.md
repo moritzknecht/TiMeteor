@@ -59,18 +59,18 @@ Because Meteor uses __WebSockets__ instead of HTTP Calls to communicate with its
 
 ## Installation
 
-After installing the "tiws" module. Simply check out this repo or use Github's "Download Zip" button. Then extract the zip in the correct folder of your Project depending on the type of your Titanium app.
+After installing the "tiws" module. Simply check out this repo or use Github's "Download Zip" button. Then extract the zip in the correct folder of your Project depending on the type of your Titanium app. The "ti.meteor" folder must be in this directories.
 
 
 ###Alloy
 
->YourProjectName/app/lib/  
+YourProjectName/app/lib/
 
 create the lib folder if it doesn't exist
 
 ###Classic
 
->YourProjectName/Resources/
+YourProjectName/Resources/
 
  
 ## Usage
