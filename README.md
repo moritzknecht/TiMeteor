@@ -11,6 +11,8 @@ This allows you use javascript to build a website frontend, website backend and 
 
 This is not considered to be used for production releases, please feel free to raise issues to get this library stable. 
 
+Version: 0.1
+
 **Table of Contents** 
 
 - [TiMeteor (Beta)](#user-content-timeteor-beta)
