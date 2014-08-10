@@ -2,8 +2,8 @@
 
 __Use the Power of Meteor in your Titanium App.__
 
-* __Meteor__ is a full stack javascript platform to write web apps, which is based a the "reactive programming" paradigm. 
-* __Titanium__ is a cross-platform Framework to build native Apps, driven by javascript code
+* [__Meteor__](http://meteor.com) is a full stack javascript platform to write web apps, which is based a the "reactive programming" paradigm. 
+* [__Titanium__](http://www.appcelerator.com/titanium/) is a cross-platform Framework to build native Apps, driven by javascript code
 
 __TiMeteor__ exposes the full Meteor API to your Titanium app. 
 
