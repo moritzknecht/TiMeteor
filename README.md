@@ -47,6 +47,7 @@ TiMeteor adds following features to your Titanium app
 * Less callbacks: Synchronous Calls and Reactive Programming with Deps 
 * Exchange login tokens between your native app and Ti.UI.WebView with the ti.meteor "WebView" plugin, so you can easily switch between native Views and HTML5 content. 
 * completely cross-platform, works on iOS and Android exactly the same way
+* working with Alloy or Classic apps
 
 TiMeteor does NOT provide data persistence on the client right now, but it is considered to be implemented. If you have an idea how to do this in elegant way, feel free to contribute. 
 
