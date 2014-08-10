@@ -11,6 +11,7 @@ This allows you use javascript to build a website frontend, website backend and 
 
 **Table of Contents** 
 
+- [TiMeteor (Beta)](#user-content-timeteor-beta)
 	- [Features](#user-content-features)
 	- [Module Dependencies](#user-content-module-dependencies)
 	- [Installation](#user-content-installation)
