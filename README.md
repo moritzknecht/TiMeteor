@@ -15,8 +15,9 @@ This is not considered to be used for production releases, please feel free to r
 
 __0.2__
 
-new Feature: LoginWith<Service> Support
+new Feature: LoginWithService Support
   supports Facebook, Google, Twitter, Github, Weibo and Meteor-Developer-Accounts
+  simply use Meteor.loginWithFace(callback) like in a browser
 
 __0.1__ 
 
