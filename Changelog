@@ -1,0 +1,8 @@
+0.2
+
+new Feature: LoginWith<Service> Support
+  supports Facebook, Google, Twitter, Github, Weibo and Meteor-Developer-Accounts
+
+0.1 
+
+Initital Commit

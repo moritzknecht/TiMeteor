@@ -11,7 +11,17 @@ This allows you use the Meteor javascript API to build a website frontend, websi
 
 This is not considered to be used for production releases, please feel free to raise issues to get this library stable. 
 
-Version: 0.1
+## Changelog
+
+__0.2__
+
+new Feature: LoginWith<Service> Support
+  supports Facebook, Google, Twitter, Github, Weibo and Meteor-Developer-Accounts
+
+__0.1__ 
+
+Initital Comm
+
 
 **Table of Contents** 
 
@@ -212,6 +222,15 @@ var options = {
 	host: String // "localhost" or "192.168.0.100" or "somedomain.com"
 	port: Number // 3000 
 	use_ssl: Boolean // set this to true if you are using ssl on the server
+	rootUrl:"http://192.168.0.70:3000/", // optional only needed by external login services for oauth callback url
+	loginServices: {
+		facebook:"YourappId", 
+		twitter:"YourClientId",
+		github:"YourClientId",
+		google:"YourClientId",
+		weibo:"YourClientId",
+		"meteor-developer":"YourClientId"
+	}
 };
 ```
 

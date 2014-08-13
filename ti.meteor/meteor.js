@@ -9,7 +9,13 @@ var Accounts = {},
 
 require(packageDir + 'dynamics_browser');
 require(packageDir + 'errors');
-
+ServiceConfiguration = {};
+ServiceConfiguration.configurations = {
+	findOne:function(query) {
+		return ServiceConfiguration.loginServices[query.service];
+	}
+}
+ServiceConfiguration.loginServices = {};
 
 // Setup the Package Namespace
 // Fake some namespaces, to avoid errors
@@ -38,10 +44,35 @@ var init = function(options) {
 	Package.minimongo = require(packageDir + 'minimongo');
 	Package.livedata = require(packageDir + 'livedata-connection');
 
+
 	var initPackages = ["mongo-livedata", "client_convenience", "accounts_common", "accounts_client", "ti_app_properties_token", "password_client"];
 	_.each(initPackages, function(key) {
 		key == "client_convenience" ? require(packageDir + key)(options) : require(packageDir + key);
 	});
+	if (options.loginServices && options.rootUrl) {
+
+		_.each(options.loginServices, function(service, key) {
+			ServiceConfiguration.loginServices[key] = {clientId:service};
+		});
+
+		var loginServicePackages = [
+			"ti_oauth", "oauth_common", "oauth_client", "url",
+			"accounts_client",
+			"accounts_common",
+			"accounts-facebook",
+			"accounts-github",
+			"accounts-google",
+			"accounts-meteor-developer",
+			"accounts-twitter",
+			"accounts-weibo"
+		];
+		_.each(loginServicePackages, function(key) {
+			require(packageDir + key);
+		});
+		Meteor.absoluteUrl.defaultOptions = {
+			rootUrl: options.rootUrl
+		};	
+	}
 };
 
 module.exports = {
