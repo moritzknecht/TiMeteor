@@ -1,4 +1,4 @@
-# TiMeteor (Beta)
+# TiMeteor
 
 __Use the Power of Meteor in your Titanium App.__
 
@@ -9,7 +9,7 @@ __TiMeteor__ exposes the full Meteor API to your Titanium app.
 
 This allows you use the Meteor javascript API to build a website frontend, website backend and native apps for iOS and Android. Your Data will be automatically in sync and you can use the same API and Mongo queries, in the browser, on the server and in your app. 
 
-This is not considered to be used for production releases, please feel free to raise issues to get this library stable. 
+I'm building this library for production Play- and Appstore app releases. For a Beta version is runs quite stable. Be brave try it out and feel free to report Bugs. 
 
 Leaderboard example: [ti-leaderboard](https://github.com/moritzknecht/ti-leaderboard)
 
@@ -291,9 +291,9 @@ The Push plugin will consist of Meteor package for the server and a TiMeteor cli
 Goals of this plugin:
 
 * normalize the Push API on client and server for iOS and Android
-* Automatic deviceToken managment in the user accounts system
+* automatic deviceToken managment in the user accounts system
 * manage server connection state depending app pause & resume
-* Manage Push Notification Delivery
+* manage Push Notification Delivery
 
 
 
