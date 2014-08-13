@@ -11,12 +11,14 @@ This allows you use the Meteor javascript API to build a website frontend, websi
 
 This is not considered to be used for production releases, please feel free to raise issues to get this library stable. 
 
+Leaderboard example: [ti-leaderboard](https://github.com/moritzknecht/ti-leaderboard)
+
 ## Changelog
 
 __0.2__
 
-new Feature: LoginWithService Support
-  supports Facebook, Google, Twitter, Github, Weibo and Meteor-Developer-Accounts
+new Feature: LoginWithService Support for Facebook, Google, Twitter, Github, Weibo and Meteor-Developer-Accounts
+
   simply use Meteor.loginWithFace(callback) like in a browser
 
 __0.1__ 
